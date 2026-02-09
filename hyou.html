@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>製品一覧</title>
+    <link rel="icon" type="image/png" href="image/favcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="top.html" class="logo-link">
+                    <div class="logo-box">
+                        <img src="image/rogo.png" alt="XTT ロゴ" class="logo-image">
+                    </div>
+                </a>
+            </div>
+            <!-- ハンバーガーボタン（レスポンシブ版のみ表示） -->
+            <button class="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- PC版ナビゲーション -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="kaisyagaiyou.html" class="nav-link">会社概要</a></li>
+                    <li><a href="hyou.html" class="nav-link">製品一覧</a></li>
+                    <li><a href="top.html#news" class="nav-link">ニュース</a></li>
+                    <li><a href="toiawase.html" class="nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メニューオーバーレイ（レスポンシブ版のみ） -->
+    <div class="nav-overlay">
+        <button class="nav-close" aria-label="メニューを閉じる">×</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="kaisyagaiyou.html" class="nav-menu-link">会社概要</a></li>
+                <li><a href="hyou.html" class="nav-menu-link">製品一覧</a></li>
+                <li><a href="top.html#news" class="nav-menu-link">ニュース</a></li>
+                <li><a href="toiawase.html" class="nav-menu-link">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="table-title-section">
+        <div class="table-title-container">
+            <h1 class="table-title" data-animation="fade-in">チップ一覧</h1>
+        </div>
+    </section>
+
+    <div class="product-nav-section">
+        <div class="product-nav-container">
+            <a href="hyou.html" class="product-nav-button active">チップ</a>
+            <a href="holder.html" class="product-nav-button">ホルダー</a>
+        </div>
+    </div>
+
+    <main class="main-content table-main">
+        <div class="table-container">
+            <div class="breaker-explanation chip-explanation">
+                <h2 class="explanation-title" data-animation="slide-in">チップブレーカーの説明</h2>
+
+                <div class="explanation-grid">
+
+                    <div class="explanation-item" data-animation="fade-up" data-delay="0">
+                        <span class="breaker-code">SM</span>
+                        <span class="breaker-desc">仕上げ用ブレーカ</span>
+                        <span class="breaker-range">ap: 0.2–1.5mm / f: 0.05–0.20mm/rev</span>
+                        <span class="breaker-feature">
+                            低切込み・低送り対応。切りくずを軽く巻き、仕上げ面重視。
+                            刃先強度は低め。
+                        </span>
+                        <span class="breaker-use">
+                            用途：仕上げ外径、薄肉部品、長尺加工
+                        </span>
+                    </div>
+
+                    <div class="explanation-item" data-animation="fade-up" data-delay="100">
+                        <span class="breaker-code">PM</span>
+                        <span class="breaker-desc">中切削用ブレーカ</span>
+                        <span class="breaker-range">ap: 0.8–3.0mm / f: 0.15–0.35mm/rev</span>
+                        <span class="breaker-feature">
+                            標準的な切りくず厚を想定した汎用型。
+                            巻き・折れのバランスが良く、最初に選ぶブレーカ。
+                        </span>
+                        <span class="breaker-use">
+                            用途：外径・端面の汎用加工、工程集約
+                        </span>
+                    </div>
+
+                    <div class="explanation-item" data-animation="fade-up" data-delay="200">
+                        <span class="breaker-code">MM</span>
+                        <span class="breaker-desc">中〜荒切削用ブレーカ</span>
+                        <span class="breaker-range">ap: 1.5–4.0mm / f: 0.25–0.50mm/rev</span>
+                        <span class="breaker-feature">
+                            深い溝形状で切りくずを強制的に折る。
+                            刃先が太く、欠けにくい高剛性設計。
+                        </span>
+                        <span class="breaker-use">
+                            用途：荒取り、黒皮材、断続切削
+                        </span>
+                    </div>
+
+                    <div class="explanation-item" data-animation="fade-up" data-delay="300">
+                        <span class="breaker-code">HF</span>
+                        <span class="breaker-desc">高送り用ブレーカ</span>
+                        <span class="breaker-range">ap: 0.5–2.0mm / f: 0.4–1.5mm/rev</span>
+                        <span class="breaker-feature">
+                            切削抵抗を送り方向に逃がす特殊形状。
+                            小ap・高送りでサイクル短縮を狙う設計。
+                        </span>
+                        <span class="breaker-use">
+                            用途：量産荒取り、高剛性NC旋盤専用
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="search-filter-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="search-input" placeholder="型番、サイズ、角度、材質で検索...">
+                    <button class="search-clear" id="clearSearch" style="display: none;">×</button>
+                </div>
+                <div class="filter-group">
+                    <select id="filterSize" class="filter-select">
+                        <option value="">サイズ: すべて</option>
+                        <option value="12.7mm">12.7mm</option>
+                        <option value="11mm">11mm</option>
+                    </select>
+                    <select id="filterAngle" class="filter-select">
+                        <option value="">角度: すべて</option>
+                        <option value="80°">80°</option>
+                        <option value="90°">90°</option>
+                        <option value="60°">60°</option>
+                    </select>
+                    <select id="filterMaterial" class="filter-select">
+                        <option value="">材質: すべて</option>
+                        <option value="超硬">超硬</option>
+                    </select>
+                </div>
+                <div class="result-count" id="resultCount"></div>
+            </div>
+
+            <table class="chip-table">
+                <thead>
+                    <tr>
+                        <th>型番</th>
+                        <th>サイズ</th>
+                        <th>角度</th>
+                        <th>材質</th>
+                        <th>画像</th>
+                        <th>価格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- CNMG -->
+                    <tr><td>CNMG120408-PM</td><td>12.7mm</td><td>80°</td><td>超硬</td><td><img src="image/透過/CNMG/CNMG_01.png" alt="CNMG_01" class="chip-image"></td><td>¥1,200</td></tr>
+                    <tr><td>CNMG120412-MM</td><td>12.7mm</td><td>80°</td><td>超硬</td><td><img src="image/透過/CNMG/CNMG_02.png" alt="CNMG_02" class="chip-image"></td><td>¥1,300</td></tr>
+                    <tr><td>CNMG120404-SM</td><td>12.7mm</td><td>80°</td><td>超硬</td><td><img src="image/透過/CNMG/CNMG_03.png" alt="CNMG_03" class="chip-image"></td><td>¥1,400</td></tr>
+                    <tr><td>CNMG120408-HF</td><td>12.7mm</td><td>80°</td><td>超硬</td><td><img src="image/透過/CNMG/CNMG_04.png" alt="CNMG_04" class="chip-image"></td><td>¥1,500</td></tr>
+                    <tr><td>CNMG120412-PM</td><td>12.7mm</td><td>80°</td><td>超硬</td><td><img src="image/透過/CNMG/CNMG_05.png" alt="CNMG_05" class="chip-image"></td><td>¥1,600</td></tr>
+                    <tr><td>CNMG120404-MM</td><td>12.7mm</td><td>80°</td><td>超硬</td><td><img src="image/透過/CNMG/CNMG_06.png" alt="CNMG_06" class="chip-image"></td><td>¥1,700</td></tr>
+                    <!-- SNMG -->
+                    <tr><td>SNMG120408-PM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_01.png" alt="SNMG_01" class="chip-image"></td><td>¥1,250</td></tr>
+                    <tr><td>SNMG120412-MM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_02.png" alt="SNMG_02" class="chip-image"></td><td>¥1,900</td></tr>
+                    <tr><td>SNMG120404-SM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_03.png" alt="SNMG_03" class="chip-image"></td><td>¥1,450</td></tr>
+                    <tr><td>SNMG120408-HF</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_04.png" alt="SNMG_04" class="chip-image"></td><td>¥1,550</td></tr>
+                    <tr><td>SNMG120412-PM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_05.png" alt="SNMG_05" class="chip-image"></td><td>¥1,650</td></tr>
+                    <tr><td>SNMG120404-MM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_06.png" alt="SNMG_06" class="chip-image"></td><td>¥1,750</td></tr>
+                    <tr><td>SNMG120408-SM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_07.png" alt="SNMG_07" class="chip-image"></td><td>¥1,850</td></tr>
+                    <tr><td>SNMG120412-HF</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_08.png" alt="SNMG_08" class="chip-image"></td><td>¥1,950</td></tr>
+                    <tr><td>SNMG120404-PM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_09.png" alt="SNMG_09" class="chip-image"></td><td>¥2,050</td></tr>
+                    <tr><td>SNMG120408-MM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_10.png" alt="SNMG_10" class="chip-image"></td><td>¥2,150</td></tr>
+                    <tr><td>SNMG120412-SM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_11.png" alt="SNMG_11" class="chip-image"></td><td>¥2,250</td></tr>
+                    <tr><td>SNMG120404-HF</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_12.png" alt="SNMG_12" class="chip-image"></td><td>¥2,900</td></tr>
+                    <tr><td>SNMG120408-PM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_13.png" alt="SNMG_13" class="chip-image"></td><td>¥2,450</td></tr>
+                    <tr><td>SNMG120412-MM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_14.png" alt="SNMG_14" class="chip-image"></td><td>¥2,550</td></tr>
+                    <tr><td>SNMG120404-SM</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_15.png" alt="SNMG_15" class="chip-image"></td><td>¥2,650</td></tr>
+                    <tr><td>SNMG120408-HF</td><td>12.7mm</td><td>90°</td><td>超硬</td><td><img src="image/透過/SNMG/SNMG_16.png" alt="SNMG_16" class="chip-image"></td><td>¥2,750</td></tr>
+                    <!-- TCGT -->
+            <tr>
+                <td>TCGT110304-PM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_01.png" alt="TCGT_01" class="chip-image"></td>
+                <td>¥1,100</td>
+            </tr>
+            <tr>
+                <td>TCGT110308-MM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_02.png" alt="TCGT_02" class="chip-image"></td>
+                <td>¥1,200</td>
+            </tr>
+            <tr>
+                <td>TCGT110304-SM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_03.png" alt="TCGT_03" class="chip-image"></td>
+                <td>¥1,300</td>
+            </tr>
+            <tr>
+                <td>TCGT110308-HF</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_04.png" alt="TCGT_04" class="chip-image"></td>
+                <td>¥1,400</td>
+            </tr>
+            <tr>
+                <td>TCGT110304-PM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_05.png" alt="TCGT_05" class="chip-image"></td>
+                <td>¥1,500</td>
+            </tr>
+            <tr>
+                <td>TCGT110308-MM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_06.png" alt="TCGT_06" class="chip-image"></td>
+                <td>¥1,600</td>
+            </tr>
+            <tr>
+                <td>TCGT110304-SM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_07.png" alt="TCGT_07" class="chip-image"></td>
+                <td>¥1,700</td>
+            </tr>
+            <tr>
+                <td>TCGT110308-HF</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_08.png" alt="TCGT_08" class="chip-image"></td>
+                <td>¥1,800</td>
+            </tr>
+            <tr>
+                <td>TCGT110304-PM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_09.png" alt="TCGT_09" class="chip-image"></td>
+                <td>¥1,900</td>
+            </tr>
+            <tr>
+                <td>TCGT110308-MM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_10.png" alt="TCGT_10" class="chip-image"></td>
+                <td>¥2,000</td>
+            </tr>
+            <tr>
+                <td>TCGT110304-SM</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_11.png" alt="TCGT_11" class="chip-image"></td>
+                <td>¥2,100</td>
+            </tr>
+            <tr>
+                <td>TCGT110308-HF</td>
+                <td>11mm</td>
+                <td>60°</td>
+                <td>超硬</td>
+                <td><img src="image/透過/TCGT/TCGT_12.png" alt="TCGT_12" class="chip-image"></td>
+                <td>¥2,200</td>
+            </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <span class="pagination-link active">1</span>
+                <a href="holder.html" class="pagination-link">2</a>
+                <a href="holder.html" class="pagination-link next">次へ &raquo;</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-heading">製品</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">チップ</a></li>
+                        <li><a href="#">ホルダー</a></li>
+                        <li><a href="#">製品一覧</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">技術情報</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">加工条件</a></li>
+                        <li><a href="#">互換性について</a></li>
+                        <li><a href="#">技術資料 <span class="pdf-text"><img src="image/pfdマーク.png" alt="PDFマーク"
+                                        class="pdf-icon"></span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">企業概要</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">ニュース</a></li>
+                        <li><a href="#">採用</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">サポート</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">見積もり依頼</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-company-info">
+                    <p class="company-name">株式会社ノクサスツール</p>
+                    <p class="company-description">NC旋盤向け切削工具(チップ・ホルダー)の開発・製造</p>
+                    <p class="company-address">〒243-0000</p>
+                    <p class="company-address">神奈川県厚木市小川町1-2-3</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">サイトポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

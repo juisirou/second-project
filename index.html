@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>ホーム</title>
+    <link rel="icon" type="image/png" href="image/favcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="top.html" class="logo-link">
+                    <div class="logo-box">
+                        <img src="image/rogo.png" alt="XTT ロゴ" class="logo-image">
+                    </div>
+                </a>
+            </div>
+            <!-- ハンバーガーボタン（レスポンシブ版のみ表示） -->
+            <button class="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- PC版ナビゲーション -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="kaisyagaiyou.html" class="nav-link">会社概要</a></li>
+                    <li><a href="hyou.html" class="nav-link">製品一覧</a></li>
+                    <li><a href="top.html#news" class="nav-link">ニュース</a></li>
+                    <li><a href="toiawase.html" class="nav-link">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メニューオーバーレイ（レスポンシブ版のみ） -->
+    <div class="nav-overlay">
+        <button class="nav-close" aria-label="メニューを閉じる">×</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="kaisyagaiyou.html" class="nav-menu-link">会社概要</a></li>
+                <li><a href="hyou.html" class="nav-menu-link">製品一覧</a></li>
+                <li><a href="top.html#news" class="nav-menu-link">ニュース</a></li>
+                <li><a href="toiawase.html" class="nav-menu-link">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- メインコンテンツはここに追加 -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 class="footer-heading">製品</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">チップ</a></li>
+                        <li><a href="#">ホルダー</a></li>
+                        <li><a href="#">製品一覧</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">技術情報</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">加工条件</a></li>
+                        <li><a href="#">互換性について</a></li>
+                        <li><a href="#">技術資料 <span class="pdf-text"><img src="image/pfdマーク.png" alt="PDFマーク" class="pdf-icon"></span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">企業概要</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">ニュース</a></li>
+                        <li><a href="#">採用</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">サポート</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">見積もり依頼</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-company-info">
+                    <p class="company-name">株式会社ノクサスツール</p>
+                    <p class="company-description">NC旋盤向け切削工具(チップ・ホルダー)の開発・製造</p>
+                    <p class="company-address">〒243-0000</p>
+                    <p class="company-address">神奈川県厚木市小川町1-2-3</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">サイトポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

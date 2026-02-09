@@ -16,9 +16,9 @@
         <div class="header-container">
             <div class="logo-container">
                 <a href="top.html" class="logo-link">
-                    <div class="logo-box">
-                        <img src="image/rogo.png" alt="XTT ロゴ" class="logo-image">
-                    </div>
+                <div class="logo-box">
+                    <img src="image/rogo.png" alt="XTT ロゴ" class="logo-image">
+                </div>
                 </a>
             </div>
             <!-- ハンバーガーボタン（レスポンシブ版のみ表示） -->
@@ -32,7 +32,7 @@
                 <ul>
                     <li><a href="kaisyagaiyou.html" class="nav-link">会社概要</a></li>
                     <li><a href="hyou.html" class="nav-link">製品一覧</a></li>
-                    <li><a href="top.html#news" class="nav-link">ニュース</a></li>
+                    <li><a href="#news" class="nav-link">ニュース</a></li>
                     <li><a href="toiawase.html" class="nav-link">お問い合わせ</a></li>
                 </ul>
             </nav>
@@ -46,14 +46,135 @@
             <ul>
                 <li><a href="kaisyagaiyou.html" class="nav-menu-link">会社概要</a></li>
                 <li><a href="hyou.html" class="nav-menu-link">製品一覧</a></li>
-                <li><a href="top.html#news" class="nav-menu-link">ニュース</a></li>
+                <li><a href="#news" class="nav-menu-link">ニュース</a></li>
                 <li><a href="toiawase.html" class="nav-menu-link">お問い合わせ</a></li>
             </ul>
         </nav>
     </div>
 
     <main class="main-content">
-        <!-- メインコンテンツはここに追加 -->
+<!--         ヒーローバナー -->
+<!--          <div class="hero-banner">
+            <h1>量産加工を止めない旋削チップ</h1>
+         </div> -->
+       <!--  <section class="hero-banner">
+            <div class="hero-image">
+                <img src="image/量産.jpg" alt="量産加工を止めない旋削チップ" class="hero-bg">
+            </div>
+        </section> -->
+        <section class="hero-banner-section">
+            <div class="image-text">
+                <img src="image/量産.jpg" alt="量産加工を止めない旋削チップ" class="image-text-img" data-parallax="0.3">
+                <div class="image-text-caption">量産加工を止めない旋削チップ</div>
+            </div>
+        </section>
+        <!-- 展示告知セクション -->
+        <section class="exhibition-section">
+            <div class="exhibition-container">
+                <div class="exhibition-left">
+                    <img src="image/JIMTOF.jpg" alt="Japan Machine Tool Exhibition 2026" class="exhibition-image" data-parallax="0.2">
+                </div>
+            </div>
+        </section>
+
+        <!-- チップセクション -->
+        <section class="chips-section">
+            <div class="section-header" data-animation="fade-in">
+                <h2 class="section-title">チップ</h2>
+                <p class="section-subtitle">CIP</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-animation="fade-up" data-delay="0">
+                    <img src="image/60度チップ.jpg" alt="TCGT系列" class="product-image">
+                    <h3 class="product-title">TCGT系列</h3>
+                    <ul class="product-features">
+                        <li>仕上げ加工向け</li>
+                        <li>低抵抗設計</li>
+                        <li>軽切削対応</li>
+                    </ul>
+                </div>
+                <div class="product-card" data-animation="fade-up" data-delay="100">
+                    <img src="image/80度チップ.jpg" alt="CNMG系列" class="product-image">
+                    <h3 class="product-title">CNMG系列</h3>
+                    <ul class="product-features">
+                        <li>量産加工の主力</li>
+                        <li>高い汎用性</li>
+                        <li>条件変動に強い</li>
+                    </ul>
+                </div>
+                <div class="product-card" data-animation="fade-up" data-delay="200">
+                    <img src="image/90度チップ.jpg" alt="SNMG系列" class="product-image">
+                    <h3 class="product-title">SNMG系列</h3>
+                    <ul class="product-features">
+                        <li>重切削対応</li>
+                        <li>高送り加工</li>
+                        <li>長寿命設計</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ホルダーセクション -->
+        <section class="holders-section">
+            <div class="section-header" data-animation="fade-in">
+                <h2 class="section-title">ホルダー</h2>
+                <p class="section-subtitle">HOLDER</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-animation="fade-up" data-delay="0">
+                    <img src="image/60度ホルダー.jpg" alt="ST系ホルダー" class="product-image">
+                    <h3 class="product-title">ST系ホルダー</h3>
+                    <ul class="product-features">
+                        <li>仕上げ加工向け</li>
+                        <li>干渉しにくい形状</li>
+                        <li>小径・清際に対応</li>
+                    </ul>
+                </div>
+                <div class="product-card" data-animation="fade-up" data-delay="100">
+                    <img src="image/80度ホルダー.jpg" alt="SC系ホルダー" class="product-image">
+                    <h3 class="product-title">SC系ホルダー</h3>
+                    <ul class="product-features">
+                        <li>量産加工の標準</li>
+                        <li>高い汎用性</li>
+                        <li>荒~仕上げ対応</li>
+                    </ul>
+                </div>
+                <div class="product-card" data-animation="fade-up" data-delay="200">
+                    <img src="image/90度ホルダー.jpg" alt="SS系ホルダー" class="product-image">
+                    <h3 class="product-title">SS系ホルダー</h3>
+                    <ul class="product-features">
+                        <li>面取り対応</li>
+                        <li>高剛性設計</li>
+                        <li>高送り加工向け</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ニュースセクション -->
+        <section class="news-section" id="news">
+            <h2 class="section-title" data-animation="slide-in">ニュース</h2>
+            <div class="news-grid">
+                <article class="news-card" data-animation="fade-up" data-delay="0">
+                    <img src="image/新ホルダー.jpg" alt="新ホルダー" class="news-image">
+                    <div class="news-content">
+                        <p class="news-text">量産加工向け新ホルダーをリリース。クーラントスルー構造により安定した冷却を実現。切りくず排出性の向上と工具寿命の延長を実現しました。</p>
+                    </div>
+                </article>
+                <article class="news-card" data-animation="fade-up" data-delay="100">
+                    <img src="image/自動化.jpg" alt="自動化" class="news-image">
+                    <div class="news-content">
+                        <p class="news-text">NC旋盤での技能検定相当形状の連続自動加工を実現。工程停止なしでの加工完了を確認。切りくず排出と工具摩耗の安定性に重点を置き、人手を介さない加工システムを構築しました。</p>
+                    </div>
+                </article>
+                <article class="news-card" data-animation="fade-up" data-delay="200">
+                    <img src="image/肩肉6mm.jpg" alt="肩肉6mm" class="news-image">
+                    <div class="news-content">
+                        <p class="news-text">SUS材での6mm肩肉加工をクーラント無供給で安定完了。切りくず排出と刃先安定性を重視した条件での加工検証事例です。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
